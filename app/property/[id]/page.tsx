@@ -6,8 +6,30 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Bed, Bath, Maximize, MapPin } from "lucide-react"
 import { notFound } from "next/navigation"
 
+// Tipos para nuestros datos
+type Agent = {
+  name: string
+  image: string
+  phone: string
+  email: string
+}
+
+type Property = {
+  id: string
+  title: string
+  price: string
+  description: string
+  images: string[]
+  bedrooms: number
+  bathrooms: number
+  area: string
+  location: string
+  features: string[]
+  agent: Agent
+}
+
 // Datos de ejemplo para tres propiedades
-const propertiesData = {
+const propertiesData: { [key: string]: Property } = {
   "1": {
     id: "1",
     title: "Villa de lujo con vistas al mar",
@@ -109,8 +131,14 @@ const propertiesData = {
   },
 }
 
-export default function PropertyDetail({ params }: { params: { id: string } }) {
-  const property = propertiesData[params.id as keyof typeof propertiesData]
+async function getProperty(id: string): Promise<Property | null> {
+  // Simulamos una carga asíncrona
+  await new Promise((resolve) => setTimeout(resolve, 100))
+  return propertiesData[id] || null
+}
+
+export default async function PropertyDetail({ params }: { params: { id: string } }) {
+  const property = await getProperty(params.id)
 
   if (!property) {
     notFound()
