@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🏡 real-estate-demo – Plataforma Inmobiliaria Demo
+Next.js • TypeScript • TailwindCSS • Filtros Dinámicos • UI Responsive
 
-## Getting Started
+🧩 Descripción
+Este proyecto es una demo funcional para inmobiliarias, desarrollada con Next.js y diseñada para mostrar una base estetica y funcional, con interfaz moderna y responsive.
+Sirve como modelo de proyecto comercial.
 
-First, run the development server:
+🎯 Funcionalidades principales
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+✅ Página principal con listado de propiedades en venta/alquiler.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✅ Filtros por categoría, ubicación, precio y tipo de operación.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ Página de detalle por propiedad con imágenes, descripción, ubicación y contacto.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✅ UI moderna con TailwindCSS y diseño 100% responsive.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+![home-inmobiliaria](https://github.com/user-attachments/assets/bc4dc551-f9cb-4141-9aa3-1201ff93b36a)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![destacadas_inmobiliaria](https://github.com/user-attachments/assets/ad66d25f-5638-4307-94e6-8344018654e0)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![detail-inmobiliaria](https://github.com/user-attachments/assets/8c1c913f-5ff8-4d0d-8992-91100bece335)
